@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>TITLE</title>
+     <meta name="description" content="DESCRIPTION">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+     <div class="container-fluid">
+         <div class="lightbox-wrapper col-sm-12">
+             <!-- <h1 class="lightbox-title">LightBox</h1> -->
+             <img class="lightbox-logo" src="img/LIGHTBOX.js-logo.png" />
+             <div class="picture-collection display-none">
+                 <img id="pic1" class="picture" src="img/taiwan.jpeg" />
+                 <img id="pic2" class="picture" src="img/taiwan2.jpeg" />
+                 <img id="pic3" class="picture" src="img/taiwan3.jpeg" />
+                 <img id="pic4" class="picture" src="img/taiwan4.jpeg" />
+              </div>
+             <div class="display-box col-sm-12">
+                  <a href="#"><i id="close-icon" onclick="closePic()" class="fa fa-times display-none" aria-hidden="true"></i></a>
+                  <a href="#" class="arrow-left"><i class="fa fa-chevron-left" onclick="loadPrevPic()" aria-hideen="true"></i></a>
+                 <img class="display-pic" src="" />
+                 <a href="#"><i class="fa fa-chevron-right" onclick="loadNextPic()" aria-hideen="true"></i></a>
+               </div>
+               <div class="carousel-box col-sm-12 display-none">
+                   <img class="carousel-pics" /><img class="carousel-pics" /><img class="carousel-pics" />
+               </div>
+
+             <div class="button-box col-sm-12">
+                 <button type="button" class="btn btn-outline-secondary expand-add-btn" onclick="expand()">Expand</button>
+                 <button type="button" class="btn btn-outline-secondary expand-add-btn" onclick="uploadPic()">Add Picture</button>
+                 <div class="fileupload display-none">
+                     <input type='file' id='getval' /><br/><br/>
+                     <!-- <div id='clock'></div> -->
+                 </div>
+              </div>
+
+             </div>
+          </div>
+
+      </div>
+
+
+
+      <script src="script.js"></script>
+      <script>loadInitialPic()</script>
+      <!--  start function , start app-->
+ </body>
+
+ </html>
